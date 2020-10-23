@@ -11,6 +11,8 @@ public class StudentMain {
 
         System.out.println(myStudent.getTotalNumberofStudents());
 
+        Main main = new Main();
+//        main.myInt;
 
     }
 }

@@ -39,7 +39,7 @@ public class Main {
 
         // if firstNumber is equal to 1
         // then go ahead and print to the console
-        if (true){
+        if(true){
             System.out.println("that variable is holding the number 1");
         } else if (firstNumber == 2) {
             System.out.println("that variable is holding the number 2");
@@ -139,6 +139,17 @@ public class Main {
             char el = myOtherString.charAt(i);
             System.out.println(el);
 //            return el;
+        }
+
+        System.out.println("Break example:");
+        for(int i = 0; i < 10; i++){
+            System.out.println(i);
+            if (i == 2) {
+                break;
+            } else if (i == 1){
+                continue;
+            }
+            System.out.println("Ending loop");
         }
 
         // while loop
