@@ -1,10 +1,26 @@
+import java.util.Arrays;
+
 public class Main {
 
     // this is a field on my class
     private int myInt = 3;
 
+    // method that is on class
+    // return char
+//    public static
+
+    public char myMethod(){
+        return 'c';
+    }
+
+    public void otherMethod(){
+        myMethod();
+    }
+
     // this is our entry point for our program
     public static void main(String[] args) {
+
+//        myMethod();
 
         // from left to right
         // int is your type
@@ -85,6 +101,48 @@ public class Main {
         int otherArray[] = {1, 3, 5};
 
 
+        // *** Loops
+        // for loop - foreach
+        // for loops will iterate depending on a condition
+        // an iterator value can be defined
+
+        // will this for loop break?
+        // yes because we the for loop will always increment on every iteration
+        for(int i = 0; i < 10; i++){
+            System.out.println(i);
+        }
+
+        System.out.println("--------");
+
+        for(int i = 0; i <= 10; i++){
+            System.out.println(i);
+        }
+
+        int[] loopArray = {1,2,3,4};
+
+        // the enhanced for loop allows for quick access to every element in a loop
+        // think of the colon as the word "in"
+        for(int el : loopArray){
+            System.out.println(el);
+        }
+
+        // this loop has the same functionality as the one above
+        for(int i = 0; i < loopArray.length; i++){
+            int el = loopArray[i];
+            System.out.println(el);
+        }
+
+        String myOtherString = "whatever";
+
+        System.out.println("this is looping through a string: ");
+        for(int i = 0; i < myOtherString.length(); i++){
+            char el = myOtherString.charAt(i);
+            System.out.println(el);
+//            return el;
+        }
+
+        // while loop
+        // do while loop
 
     }
 
